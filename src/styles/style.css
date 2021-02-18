@@ -1,6 +1,6 @@
 .dataViewer {
   position: relative;
-  top: 195px;
+  top: 185px;
   height: 390px;
   width: 650px;
   background-color: #f6f6f677;
@@ -12,6 +12,7 @@
   justify-content: center;
   align-items: center;
   line-height: 0px;
+  box-shadow: 0 0 1px 2px #777575;
 }
 
 .navbar {
@@ -47,7 +48,7 @@
   backdrop-filter: blur(10px);
   height: 40px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 15px;

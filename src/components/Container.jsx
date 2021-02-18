@@ -7,9 +7,9 @@ export default function Container({ children }) {
     const currentInstance = new Date();
     const currentTime = currentInstance.getHours();
 
-    if (currentTime >= 7 && currentTime < 12) return "bg1";
-    if (currentTime >= 13 && currentTime < 18) return "bg2";
-    if (currentTime >= 19 && currentTime < 23) return "bg3";
+    if (currentTime >= 7 && currentTime <= 12) return "bg1";
+    if (currentTime >= 13 && currentTime <= 18) return "bg2";
+    if (currentTime >= 19 && currentTime <= 23) return "bg3";
   };
 
   return <StyledDiv bgImage={getImage()}>{children}</StyledDiv>;
