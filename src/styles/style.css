@@ -81,3 +81,89 @@
 .title {
   color: #314e52;
 }
+
+@media only screen and (max-width: 450px) {
+  .dataViewer {
+    position: relative;
+    top: 235px;
+    height: 390px;
+    width: 300px;
+    background-color: #f6f6f677;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    font-family: "Satisfy", cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 0px;
+    box-shadow: 0 0 1px 2px #777575;
+  }
+
+  .navbar {
+    background-color: #e8eae69a;
+    backdrop-filter: blur(2px);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    font-family: "Pacifico", cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+  }
+
+  .parentContainer {
+    height: 100vh;
+    background-size: auto;
+    background-position: center;
+  }
+
+  .positionDiv {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .searchContainer {
+    width: 320px;
+    background-color: #f6f6f677;
+    backdrop-filter: blur(10px);
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    transition: all 0.2s ease;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    top: 65px;
+  }
+  .searchBar {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+    font-family: "Pacifico", cursive;
+  }
+
+  .searchBar:focus {
+    outline: none;
+    border: none;
+  }
+
+  .searchContainer:focus-within {
+    box-shadow: 0 0 1px 2px #777575;
+    transition: all 0.2s ease;
+  }
+
+  .title {
+    color: #314e52;
+  }
+}
